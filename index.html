@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Galata Kulesi - İstanbul'un efsanevi simgesi. Tarih, mimari ve güzellik bir arada.">
+    <title>Galata Kulesi | İstanbul'un Efsanevi Simgesi</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- QR Code Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <i class="fas fa-landmark"></i>
+                <span>Galata Kulesi</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Ana Sayfa</a></li>
+                <li><a href="#about">Hakkında</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#timeline">Tarihçe</a></li>
+                <li><a href="#qr">QR Kod</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-particles" id="particles"></div>
+
+        <!-- CSS Galata Tower -->
+        <div class="tower-wrapper">
+            <div class="tower">
+                <div class="tower-flag">
+                    <div class="flag-pole"></div>
+                    <div class="flag-fabric"></div>
+                </div>
+                <div class="tower-top-cone"></div>
+                <div class="tower-top-ring"></div>
+                <div class="tower-observation">
+                    <div class="tower-window-obs"></div>
+                    <div class="tower-window-obs"></div>
+                    <div class="tower-window-obs"></div>
+                    <div class="tower-window-obs"></div>
+                    <div class="tower-window-obs"></div>
+                </div>
+                <div class="tower-mid-ring"></div>
+                <div class="tower-body">
+                    <div class="tower-window"></div>
+                    <div class="tower-window"></div>
+                    <div class="tower-window"></div>
+                    <div class="tower-window"></div>
+                    <div class="tower-window"></div>
+                    <div class="tower-window"></div>
+                </div>
+                <div class="tower-base"></div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <i class="fas fa-star"></i> İstanbul'un Kalbi
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                <span class="title-line">Galata</span>
+                <span class="title-line title-accent">Kulesi</span>
+            </h1>
+            <p class="hero-subtitle animate-on-scroll">
+                528 yıllık tarihi ile İstanbul'un en ikonik yapılarından biri.
+                Bizans'tan Osmanlı'ya, geçmişten bugüne uzanan eşsiz bir yolculuk.
+            </p>
+            <div class="presenter-badge animate-on-scroll">
+                <i class="fas fa-user-graduate"></i>
+                <span>Sunan: <strong>Erva Fatıma Çatuk</strong></span>
+            </div>
+            <div class="hero-buttons animate-on-scroll">
+                <a href="#about" class="btn btn-primary">
+                    <i class="fas fa-compass"></i> Keşfet
+                </a>
+                <a href="#gallery" class="btn btn-outline">
+                    <i class="fas fa-images"></i> Galeri
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Aşağı Kaydır</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-book-open"></i> Tarih</span>
+                <h2 class="section-title">Galata Kulesi Hakkında</h2>
+                <div class="section-divider">
+                    <span></span><i class="fas fa-landmark"></i><span></span>
+                </div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card animate-on-scroll" style="--delay: 0.1s">
+                    <div class="about-card-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Kuruluş</h3>
+                    <p>1348 yılında Cenevizliler tarafından "Christea Turris" (İsa Kulesi) adıyla inşa edilmiştir.
+                        İstanbul'un en eski kulelerinden biridir.</p>
+                </div>
+
+                <div class="about-card animate-on-scroll" style="--delay: 0.2s">
+                    <div class="about-card-icon">
+                        <i class="fas fa-ruler-vertical"></i>
+                    </div>
+                    <h3>Mimari</h3>
+                    <p>66.90 metre yüksekliğinde, 9 katlı taş yapı. Duvar kalınlığı 3.75 metre olan kule, Galata
+                        surlarının en yüksek noktasında yer alır.</p>
+                </div>
+
+                <div class="about-card animate-on-scroll" style="--delay: 0.3s">
+                    <div class="about-card-icon">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <h3>Hezârfen Efsanesi</h3>
+                    <p>1632'de Hezârfen Ahmed Çelebi, kuleden takma kanatlarla uçarak Üsküdar'a ulaşmıştır. Havacılık
+                        tarihinin öncü olaylarından biridir.</p>
+                </div>
+
+                <div class="about-card animate-on-scroll" style="--delay: 0.4s">
+                    <div class="about-card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Panoramik Manzara</h3>
+                    <p>Kulenin seyir terasından İstanbul Boğazı, Topkapı Sarayı, Ayasofya ve Sultanahmet Camii'nin eşsiz
+                        manzarası görülebilir.</p>
+                </div>
+            </div>
+
+            <!-- Stats bar -->
+            <div class="stats-bar animate-on-scroll">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1348">0</div>
+                    <div class="stat-label">Kuruluş Yılı</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="67">0</div>
+                    <div class="stat-label">Metre Yükseklik</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="9">0</div>
+                    <div class="stat-label">Kat Sayısı</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="676">0</div>
+                    <div class="stat-label">Yıllık Tarih</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-camera-retro"></i> Fotoğraflar</span>
+                <h2 class="section-title">Görsel Galeri</h2>
+                <div class="section-divider">
+                    <span></span><i class="fas fa-camera"></i><span></span>
+                </div>
+                <p class="section-desc">Galata Kulesi'nin büyüleyici fotoğrafları</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-large animate-on-scroll" style="--delay: 0.1s">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Görsel 1</span>
+                        <small>Buraya kendi görselinizi ekleyin</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Galata Kulesi — Gündüz Manzarası</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" style="--delay: 0.2s">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Görsel 2</span>
+                        <small>Buraya kendi görselinizi ekleyin</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Gece Manzarası</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" style="--delay: 0.3s">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Görsel 3</span>
+                        <small>Buraya kendi görselinizi ekleyin</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Tarihi Detay</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" style="--delay: 0.4s">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Görsel 4</span>
+                        <small>Buraya kendi görselinizi ekleyin</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Panoramik Görünüm</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-wide animate-on-scroll" style="--delay: 0.5s">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Görsel 5</span>
+                        <small>Buraya kendi görselinizi ekleyin</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Boğaz Manzarası</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" style="--delay: 0.6s">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Görsel 6</span>
+                        <small>Buraya kendi görselinizi ekleyin</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>İç Mekan</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-instruction animate-on-scroll">
+                <i class="fas fa-info-circle"></i>
+                <p><strong>Görselleri eklemek için:</strong> &lt;img&gt; etiketlerini gallery-placeholder div'leri ile
+                    değiştirin. Örnek: <code>&lt;img src="gorsel.jpg" alt="açıklama"&gt;</code></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="section video-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-film"></i> Video</span>
+                <h2 class="section-title">Video Sunumu</h2>
+                <div class="section-divider">
+                    <span></span><i class="fas fa-play-circle"></i><span></span>
+                </div>
+            </div>
+
+            <div class="video-container animate-on-scroll">
+                <div class="video-frame">
+                    <div class="video-placeholder" id="videoPlaceholder">
+                        <div class="video-placeholder-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <h3>Video Alanı</h3>
+                        <p>Buraya kendi videonuzu ekleyin</p>
+                        <small>YouTube embed kodu veya &lt;video&gt; etiketi kullanabilirsiniz</small>
+                        <div class="video-examples">
+                            <code>&lt;iframe src="youtube-link" ...&gt;&lt;/iframe&gt;</code>
+                            <span>veya</span>
+                            <code>&lt;video src="video.mp4" controls&gt;&lt;/video&gt;</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondary video slots -->
+            <div class="video-grid animate-on-scroll">
+                <div class="video-mini-card">
+                    <div class="video-mini-placeholder">
+                        <i class="fas fa-play"></i>
+                        <span>Video 2</span>
+                    </div>
+                </div>
+                <div class="video-mini-card">
+                    <div class="video-mini-placeholder">
+                        <i class="fas fa-play"></i>
+                        <span>Video 3</span>
+                    </div>
+                </div>
+                <div class="video-mini-card">
+                    <div class="video-mini-placeholder">
+                        <i class="fas fa-play"></i>
+                        <span>Video 4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section timeline-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-hourglass-half"></i> Tarihçe</span>
+                <h2 class="section-title">Zaman Çizelgesi</h2>
+                <div class="section-divider">
+                    <span></span><i class="fas fa-clock"></i><span></span>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll" style="--delay: 0.1s">
+                    <div class="timeline-dot"><i class="fas fa-hammer"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">1348</span>
+                        <h3>İnşa Edilmesi</h3>
+                        <p>Ceneviz kolonisi tarafından "Christea Turris" adıyla surların en yüksek noktasına inşa
+                            edildi.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" style="--delay: 0.2s">
+                    <div class="timeline-dot"><i class="fas fa-flag"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">1453</span>
+                        <h3>Osmanlı Dönemi</h3>
+                        <p>Fatih Sultan Mehmet'in İstanbul'u fethiyle kule Osmanlı yönetimine geçti ve askeri amaçlarla
+                            kullanılmaya başlandı.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" style="--delay: 0.3s">
+                    <div class="timeline-dot"><i class="fas fa-wind"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">1632</span>
+                        <h3>Hezârfen'in Uçuşu</h3>
+                        <p>Hezârfen Ahmed Çelebi, takma kanatlarla Galata Kulesi'nden Üsküdar'a uçarak tarihe geçti.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" style="--delay: 0.4s">
+                    <div class="timeline-dot"><i class="fas fa-fire"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">1794</span>
+                        <h3>Büyük Yangın</h3>
+                        <p>Büyük Beyoğlu yangınında zarar gören kule, III. Selim döneminde restore edildi.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" style="--delay: 0.5s">
+                    <div class="timeline-dot"><i class="fas fa-tools"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">1967</span>
+                        <h3>Modern Restorasyon</h3>
+                        <p>Kapsamlı bir restorasyon ile kule halka açıldı. Seyir terası ve restoran eklendi.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" style="--delay: 0.6s">
+                    <div class="timeline-dot"><i class="fas fa-globe"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2020</span>
+                        <h3>UNESCO Mirası</h3>
+                        <p>Galata Kulesi, UNESCO Dünya Mirası Geçici Listesi'ne dahil edildi. Müze olarak hizmete
+                            açıldı.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QR Code Section -->
+    <section id="qr" class="section qr-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-qrcode"></i> Paylaş</span>
+                <h2 class="section-title">QR Kod ile Paylaş</h2>
+                <div class="section-divider">
+                    <span></span><i class="fas fa-share-alt"></i><span></span>
+                </div>
+                <p class="section-desc">QR kodu okutarak bu sunuma hızlıca erişebilirsiniz</p>
+            </div>
+
+            <div class="qr-showcase animate-on-scroll">
+                <div class="qr-tower-frame">
+                    <!-- Tower decorative frame top -->
+                    <div class="qr-frame-top">
+                        <div class="qr-frame-cone"></div>
+                        <div class="qr-frame-ring"></div>
+                    </div>
+
+                    <div class="qr-code-wrapper">
+                        <div id="qrcode"></div>
+                    </div>
+
+                    <!-- Tower decorative frame bottom -->
+                    <div class="qr-frame-bottom">
+                        <div class="qr-frame-base"></div>
+                    </div>
+                </div>
+
+                <div class="qr-info">
+                    <h3><i class="fas fa-mobile-alt"></i> Nasıl Kullanılır?</h3>
+                    <ol>
+                        <li>Telefonunuzun kamerasını QR koda tutun</li>
+                        <li>Açılan bağlantıya tıklayın</li>
+                        <li>Sunum anında karşınızda!</li>
+                    </ol>
+                    <div class="qr-url-box">
+                        <i class="fas fa-link"></i>
+                        <span id="qrUrl">Site deploy edildikten sonra URL güncellenecek</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg-pattern"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-landmark"></i>
+                    <span>Galata Kulesi</span>
+                </div>
+                <p class="footer-desc">İstanbul'un kalbinde, tarihin ve güzelliğin buluşma noktası.</p>
+                <div class="footer-presenter">
+                    <i class="fas fa-pen-fancy"></i>
+                    <span>Bu sunum <strong>Erva Fatıma Çatuk</strong> tarafından hazırlanmıştır.</span>
+                </div>
+                <div class="footer-divider"></div>
+                <p class="footer-copy">&copy; 2026 Galata Kulesi Sunumu — Erva Fatıma Çatuk. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+        <div class="lightbox-content" id="lightboxContent"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
