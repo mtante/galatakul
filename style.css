@@ -736,8 +736,7 @@ ul {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 250px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 16px;
     margin-bottom: 30px;
 }
@@ -749,6 +748,7 @@ ul {
     cursor: pointer;
     transition: var(--transition);
     border: 1px solid rgba(201, 168, 76, 0.1);
+    aspect-ratio: 9 / 16;
 }
 
 .gallery-item:hover {
@@ -880,11 +880,22 @@ ul {
     aspect-ratio: 16 / 9;
 }
 
+.vertical-video-frame {
+    aspect-ratio: 9 / 16;
+    max-width: 400px; /* Mobil ekranlar veya dikey ekranlar için maksimum genişlik */
+    margin: 0 auto;
+}
+
 .video-frame iframe,
 .video-frame video {
     width: 100%;
     height: 100%;
     border: none;
+    background: #000;
+}
+
+.vertical-video {
+    object-fit: cover;
 }
 
 .video-placeholder {
